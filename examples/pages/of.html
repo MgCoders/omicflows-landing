@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+
+	<title>OmicFlows</title>
+
+	<!-- Behavioral Meta Data -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles.css"/>
+
+</head>
+<body>
+
+	<div id="container" class="container">
+		<div id="scene" class="scene">
+			
+			<div data-depth="1.00"><div id="div_pattern" class="contenido"></div></div>
+			<div data-depth="1.00"><div id="div_pattern" class="contenido"></div></div>
+			
+			<div data-depth="0.15"><div id="logo_omic" class="contenido"></div></div>
+			<div data-depth="0.15"><div id="logo_omic" class="contenido"></div></div>
+			<div data-depth="0.15"><div id="logo_omic" class="contenido"></div></div>
+			<div data-depth="0.15"><div id="logo_omic" class="contenido"></div></div>
+
+			<div data-depth="0.0" ><div id="linkedin" class="contenido"></div></div>
+
+			<div data-depth="0.0" ><div id="twitter" class="contenido"></div></div>
+
+			<div data-depth="0.0" ><div id="separador_1" class="contenido"></div></div>
+
+			<div data-depth="0.0" ><div id="sobrecito" class="contenido"></div></div>
+
+			<div data-depth="0.0" ><div id="hello" class="contenido"> hello </div></div>
+
+			<div data-depth="0.0" ><div id="separador_2"  class="contenido"></div></div>
+
+			<div data-depth="0.0" ><div id="pua" class="contenido"></div></div>
+
+			<div data-depth="0.0" ><div id="direccion_1" class="contenido"></div></div>
+			<div data-depth="0.0" ><div id="direccion_2" class="contenido"></div></div>
+		</div>		
+	</div>
+
+	<!-- Scripts -->
+	<script src="./parallax.js"></script>
+	<script>
+
+	// Pretty simple huh?
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
+
+	</script>
+
+	<style>
+		
+		body 
+		{
+			overflow: hidden;
+			background-color: rgb(43, 211, 197); /*#22d3c5;*/
+		}
+
+		#scene{
+			margin-left: -700px;
+			margin-top: -200px;
+		}
+
+		.contenido{
+			min-height: 1080px;
+			min-width: 1980px;
+			background-repeat: no-repeat;			
+		}
+
+		#div_pattern {
+    		background-image: url('images/pattern-fondo.svg');
+			background-position: center bottom;
+			background-size: 160%;
+		}
+
+		#logo_omic {
+			background-image: url('images/logo.svg');
+			background-position: center 40%;
+			background-size: 20%;
+		}
+
+		#linkedin {
+    		background-image: url('images/icono-linkedin.svg');
+			background-position: 35% 70%;
+			background-size: 28px;
+		}
+
+		#twitter {
+    		background-image: url('images/icono-twitter.svg');
+			background-position: 37.5% 70%;
+			background-size: 28px;
+		}
+
+		#separador_1 {
+    		background-image: url('images/separador.svg');
+			background-position: 39.5% 70%;
+			background-size: auto 32px;
+		}
+
+		#sobrecito {
+    		background-image: url('images/icono-mail.svg');
+			background-position: 41% 70%;
+			background-size: auto 21px;
+		}
+		
+		#hello {
+		    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='50' font-family='arial'>hello@omicflows.com</text></svg>");
+			background-position: 46% 70%;
+			background-size: auto 16px;
+		}
+
+		#separador_2 {
+    		background-image: url('images/separador.svg');
+			background-position: 51% 70%;
+			background-size: auto 32px;
+		}
+
+		#pua {
+    		background-image: url('images/icono-direccion.svg');
+			background-position: 52.5% 70%;
+			background-size: auto 32px;
+		}
+
+		#direccion_1 {
+    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='20' font-family='arial'>Av. Gonzalo Ramirez 1676</text></svg>");
+			background-position: 64% 69%;
+			background-size: auto 32px;
+		}
+		#direccion_2 {
+    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='20' font-family='arial'>Sinergia Palermo | Montevideo, Uruguay</text></svg>");
+			background-position: 64% 70.5%;
+			background-size: auto 32px;
+		}
+
+	</style>
+
+</body>
+</html>
