@@ -16,6 +16,8 @@ const sourcemaps = require('gulp-sourcemaps')
 const uglify = require('gulp-uglify')
 const util = require('gulp-util')
 
+const connect = require('gulp-connect');
+
 gulp.task('clean', (cb) => {
   rimraf('./dist', cb)
 })
@@ -77,7 +79,8 @@ gulp.task('watch', ['build'], () => {
     port: 9000,
     server: {
       baseDir: [path.join('examples', 'pages'), path.join('examples', 'assets'), 'dist'],
-      directory: true
+      directory: false,
+        index: "hello.html"
     }
   })
    gulp.watch(path.join('src', '*.js'), ['build:js'])
@@ -86,3 +89,12 @@ gulp.task('watch', ['build'], () => {
 })
 
 gulp.task('default', ['watch'])
+
+
+gulp.task('webserver', ['build'] ,function() {
+    connect.server({
+        name: 'Dev App',
+        root: ['dist', 'examples'],
+        port: 8000,
+    });
+});
