@@ -1,0 +1,9 @@
+version: '3.1'
+
+services:
+
+    omicflows:
+      build: .
+      image: omicflows-landing
+      ports:
+        - 9000:9000
