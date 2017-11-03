@@ -77,7 +77,8 @@ gulp.task('watch', ['build'], () => {
     port: 9000,
     server: {
       baseDir: [path.join('examples', 'pages'), path.join('examples', 'assets'), 'dist'],
-      directory: true
+      directory: false,
+        index: "hello.html"
     }
   })
    gulp.watch(path.join('src', '*.js'), ['build:js'])
