@@ -35,7 +35,7 @@
 
 			<div data-depth="0.0" ><div id="sobrecito" class="contenido"></div></div>
 
-			<div data-depth="0.0" ><div id="hello" class="contenido"> hello </div></div>
+			<div data-depth="0.0" ><div id="hello" class="contenido"> </div></div>
 
 			<div data-depth="0.0" ><div id="separador_2"  class="contenido"></div></div>
 
@@ -64,80 +64,240 @@
 			background-color: rgb(43, 211, 197); /*#22d3c5;*/
 		}
 
-		#scene{
-			margin-left: -700px;
-			margin-top: -200px;
+
+		@media (min-width: 900px) {
+			#scene{
+				margin-left: -700px;
+				margin-top: -200px;
+			}
+
+			.contenido{
+				min-height: 1080px;
+				min-width: 1980px;
+				background-repeat: no-repeat;			
+			}
+
+			#div_pattern {
+	    		background-image: url('images/pattern-fondo.svg');
+				background-position: center bottom;
+				background-size: 160%;
+			}
+
+			#logo_omic {
+				background-image: url('images/logo.svg');
+				background-position: center 40%;
+				background-size: 20%;
+			}
+
+			#linkedin {
+	    		background-image: url('images/icono-linkedin.svg');
+				background-position: 35% 70%;
+				background-size: 28px;
+			}
+
+			#twitter {
+	    		background-image: url('images/icono-twitter.svg');
+				background-position: 37.5% 70%;
+				background-size: 28px;
+			}
+
+			#separador_1 {
+	    		background-image: url('images/separador.svg');
+				background-position: 39.5% 70%;
+				background-size: auto 32px;
+			}
+
+			#sobrecito {
+	    		background-image: url('images/icono-mail.svg');
+				background-position: 41% 70%;
+				background-size: auto 21px;
+			}
+			
+			#hello {
+			    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='50' font-family='arial'>hello@omicflows.com</text></svg>");
+				background-position: 46% 70%;
+				background-size: auto 16px;
+			}
+
+			#separador_2 {
+	    		background-image: url('images/separador.svg');
+				background-position: 51% 70%;
+				background-size: auto 32px;
+			}
+
+			#pua {
+	    		background-image: url('images/icono-direccion.svg');
+				background-position: 52.5% 70%;
+				background-size: auto 32px;
+			}
+
+			#direccion_1 {
+	    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='20' font-family='arial'>Av. Gonzalo Ramirez 1676</text></svg>");
+				background-position: 64% 69%;
+				background-size: auto 32px;
+			}
+			#direccion_2 {
+	    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='20' font-family='arial'>Sinergia Palermo | Montevideo, Uruguay</text></svg>");
+				background-position: 64% 70.5%;
+				background-size: auto 32px;
+			}
+		}
+		@media (max-width: 700px) and (orientation: portrait) {
+			#scene{
+				margin-left: -15px;
+				margin-top: -90px;
+			}
+
+			.contenido{
+				min-height: 740px;
+				min-width: 420px;
+				background-repeat: no-repeat;			
+			}
+
+			#div_pattern {
+	    		background-image: url('images/pattern-fondo.svg');
+				background-position: center bottom;
+				background-size: 320%;
+			}
+
+			#logo_omic {
+				background-image: url('images/logo.svg');
+				background-position: 46% 40%;
+				background-size: 63%;
+			}
+
+			#linkedin {
+	    		background-image: url('images/icono-linkedin.svg');
+				background-position: 42% 57%;
+				background-size: 28px;
+			}
+
+			#twitter {
+	    		background-image: url('images/icono-twitter.svg');
+				background-position: 56% 57%;
+				background-size: 28px;
+			}
+
+			#separador_1 {
+	    		background-image: url('images/separador.svg');
+				background-position: 49.5% 57%;
+				background-size: auto 32px;
+			}
+
+			#sobrecito {
+	    		background-image: url('images/icono-mail.svg');
+				background-position: 28% 65%;
+				background-size: auto 21px;
+			}
+			
+			#hello {
+			    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='50' font-family='arial'>hello@omicflows.com</text></svg>");
+				background-position: 58% 65%;
+				background-size: auto 16px;
+			}
+
+			#separador_2 {
+	    		display: none;
+	    		background-image: url('images/separador.svg');
+				background-position: 51% 77%;
+				background-size: auto 32px;
+			}
+
+			#pua {
+	    		background-image: url('images/icono-direccion.svg');
+				background-position: 10% 75%;
+				background-size: auto 32px;
+			}
+
+			#direccion_1 {
+	    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='25' font-family='arial'>Av. Gonzalo Ramirez 1676</text></svg>");
+				background-position: 84% 73%;
+				background-size: auto 32px;
+			}
+			#direccion_2 {
+	    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='25' font-family='arial'>Sinergia Palermo | Montevideo, Uruguay</text></svg>");
+				background-position: 84% 76%;
+				background-size: auto 32px;
+			}
 		}
 
-		.contenido{
-			min-height: 1080px;
-			min-width: 1980px;
-			background-repeat: no-repeat;			
-		}
+		@media (min-width: 700px) and (max-width: 900px) {
+			#scene{
+				margin-left: -60px;
+				margin-top: -240px;
+			}
 
-		#div_pattern {
-    		background-image: url('images/pattern-fondo.svg');
-			background-position: center bottom;
-			background-size: 160%;
-		}
+			.contenido{
+				min-height: 1300px;
+				min-width: 700px;
+				background-repeat: no-repeat;			
+			}
 
-		#logo_omic {
-			background-image: url('images/logo.svg');
-			background-position: center 40%;
-			background-size: 20%;
-		}
+			#div_pattern {
+	    		background-image: url('images/pattern-fondo.svg');
+				background-position: center bottom;
+				background-size: 320%;
+			}
 
-		#linkedin {
-    		background-image: url('images/icono-linkedin.svg');
-			background-position: 35% 70%;
-			background-size: 28px;
-		}
+			#logo_omic {
+				background-image: url('images/logo.svg');
+				background-position: 46% 25%;
+				background-size: 63%;
+			}
 
-		#twitter {
-    		background-image: url('images/icono-twitter.svg');
-			background-position: 37.5% 70%;
-			background-size: 28px;
-		}
+			#linkedin {
+	    		background-image: url('images/icono-linkedin.svg');
+				background-position: 44% 35%;
+				background-size: 28px;
+			}
 
-		#separador_1 {
-    		background-image: url('images/separador.svg');
-			background-position: 39.5% 70%;
-			background-size: auto 32px;
-		}
+			#twitter {
+	    		background-image: url('images/icono-twitter.svg');
+				background-position: 54.5% 35%;
+				background-size: 28px;
+			}
 
-		#sobrecito {
-    		background-image: url('images/icono-mail.svg');
-			background-position: 41% 70%;
-			background-size: auto 21px;
-		}
-		
-		#hello {
-		    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='50' font-family='arial'>hello@omicflows.com</text></svg>");
-			background-position: 46% 70%;
-			background-size: auto 16px;
-		}
+			#separador_1 {
+	    		background-image: url('images/separador.svg');
+				background-position: 49.5% 35%;
+				background-size: auto 32px;
+			}
 
-		#separador_2 {
-    		background-image: url('images/separador.svg');
-			background-position: 51% 70%;
-			background-size: auto 32px;
-		}
+			#sobrecito {
+	    		background-image: url('images/icono-mail.svg');
+				background-position: 35% 39.9%;
+				background-size: auto 21px;
+			}
+			
+			#hello {
+			    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='50' font-family='arial'>hello@omicflows.com</text></svg>");
+				background-position: 52% 40%;
+				background-size: auto 16px;
+			}
 
-		#pua {
-    		background-image: url('images/icono-direccion.svg');
-			background-position: 52.5% 70%;
-			background-size: auto 32px;
-		}
+			#separador_2 {
+	    		display: none;
+	    		background-image: url('images/separador.svg');
+				background-position: 51% 47%;
+				background-size: auto 32px;
+			}
 
-		#direccion_1 {
-    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='20' font-family='arial'>Av. Gonzalo Ramirez 1676</text></svg>");
-			background-position: 64% 69%;
-			background-size: auto 32px;
-		}
-		#direccion_2 {
-    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='20' font-family='arial'>Sinergia Palermo | Montevideo, Uruguay</text></svg>");
-			background-position: 64% 70.5%;
-			background-size: auto 32px;
+			#pua {
+	    		background-image: url('images/icono-direccion.svg');
+				background-position: 28% 45%;
+				background-size: auto 32px;
+			}
+
+			#direccion_1 {
+	    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='25' font-family='arial'>Av. Gonzalo Ramirez 1676</text></svg>");
+				background-position: 60% 44%;
+				background-size: auto 32px;
+			}
+			#direccion_2 {
+	    		background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='50px' width='500px'><text x='00' y='40' fill='white' font-size='25' font-family='arial'>Sinergia Palermo | Montevideo, Uruguay</text></svg>");
+				background-position: 60% 45.5%;
+				background-size: auto 32px;
+			}
 		}
 
 	</style>
