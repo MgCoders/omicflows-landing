@@ -26,9 +26,9 @@
 			<div data-depth="0.2"><div id="logo_omic" class="contenido"></div></div>
 			<div data-depth="0.2"><div id="logo_omic" class="contenido"></div></div>
 			<div data-depth="0.2"><div id="logo_omic" class="contenido"></div></div>
-
+			
 			<div data-depth="0.0" ><div id="linkedin" class="contenido"></div></div>
-
+		
 			<div data-depth="0.0" ><div id="twitter" class="contenido"></div></div>
 
 			<div data-depth="0.0" ><div id="separador_1" class="contenido"></div></div>
@@ -65,7 +65,11 @@
 		}
 
 
-		@media (min-width: 700px) {
+		a {
+			z-index: 9999;
+		}
+
+		@media (min-width: 900px) {
 			#scene{
 				margin-left: -700px;
 				margin-top: -200px;
@@ -142,8 +146,10 @@
 				background-size: auto 32px;
 			}
 		}
+
+
 		@media screen and (max-width: 700px) and (orientation: portrait) {
-			#scene{
+						#scene{
 				margin-left: -15px;
 				margin-top: -90px;
 			}
@@ -221,7 +227,7 @@
 			}
 		}
 
-		@media screen and (min-width: 300px) and (orientation: landscape) {
+		@media screen and (min-width: 300px) and (max-width: 899px) and (orientation: landscape) {
 			#scene{
 				margin-left: -60px;
 				margin-top: -240px;
