@@ -1,0 +1,7 @@
+<project>
+    <artifactId>omicflows-landing</artifactId>
+    <version>1.0</version>
+    <urlTest>omicflows.magnesium.coop</urlTest>
+    <urlProd>omicflows.com</urlProd>
+</project>
+
