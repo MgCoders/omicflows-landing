@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 #/bin/bash
 set -x
-cd /home/ubuntu/omicflows-backend-deploy
-docker-compose -f docker-compose.production.yml kill
+docker stack rm --compose-file=/home/ubuntu/REPLACE_PROJECT_NAME-deploy/docker-compose.testing.yml REPLACE_PROJECT_NAME
